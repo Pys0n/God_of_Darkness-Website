@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de" style="background-color: #1d1d1d;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - God of Darkness</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<div class="topnav">
+	  <a class="active" href="index.html">Home</a>
+	  <a href="news.html">News</a>
+	  <a href="wiki/inserts/templateItem.html">Wiki</a>
+	  <a href="changelog.html">Changelog</a>
+	  <a href="contact.html">Contact</a>
+	</div>
+
+	<div class="longbox">
+		<h1>God of Darkness</h1>
+		<br>
+		<p style="font-size: 25px;">God of Darkness is a single-player adventure game in which the god of darkness,<br>the Nameless One, raids the capital ... 
+		of the country ... in which you live.<br>He wants to turn the world into darkness. But the gods of light have<br>chosen you to defeat the Nameless One...<br><br>
+		Let your adventure begin...</p>
+	</div>
+	<div class="box">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+	<div class="box">
+		<br><br><br><br><br><br><br><br><br><br>
+	</div>
+	<div class="longbox" id="boxNews">
+		<h1>News</h1><br>
+		<p style="font-size: 25px;">Here you can find all the latest news about the game, whether items, 
+		graphics,<br>updates, special events or maybe even the one or other release date,<br>all with just one click.</p>
+	</div>
+
+	<div class="longbox" id="boxWiki">
+		<h1>Wiki</h1><br>
+		<p style="font-size: 25px;">You'll find everything you need to know in the God of Darkness Wiki, where you'll
+		find<br>enemy and item data and drop rates. But also boards with the Mysterious Script,<br>characters and their characteristics and enchantments.</p>
+	</div>
+	<div class="box">
+		<br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+	<div class="halfbox" id="boxChangelog">
+		<h2>Changelog</h2><br>
+		All changes at a glance.
+	</div>
+	<div class="halfbox" id="boxContact">
+		<h2>Contact</h2><br>
+		This is how you can reach me.
+	</div>
+
+	<script>
+		const box = document.querySelector('.longbox');
+
+		box.addEventListener('mouseover', function() {
+		box.classList.add('enlarge');
+		});
+
+		box.addEventListener('mouseleave', function() {
+		box.classList.remove('enlarge');
+		});
+
+		document.getElementById('boxNews').addEventListener('click', function() {
+			window.location.href = 'news.html';
+		});
+		
+		document.getElementById('boxWiki').addEventListener('click', function() {
+			window.location.href = 'wiki/overview.html';
+		});
+		
+		document.getElementById('boxChangelog').addEventListener('click', function() {
+			window.location.href = 'changelog.html';
+		});
+
+		document.getElementById('boxContact').addEventListener('click', function() {
+			window.location.href = 'contact.html';
+		});
+	</script>
+
+	<br>
+	<footer class='black-footer'>
+	  <div id='footer-content'>
+		created by <a href="https://github.com/Pys0n">Pys0n</a>
+	  </div>
+	</footer>
+  </body>
+</html>

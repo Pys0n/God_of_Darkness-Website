@@ -1,0 +1,219 @@
+.site-footer {
+    background: white;
+}
+
+#footer-content {
+    background: black;
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: lightgrey;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c28b00;
+}
+
+/* selected link */
+a:active {
+    color: #c28b00;
+}
+
+
+/* unvisited link */
+.gold-white:link {
+    color: #c28b00;
+}
+
+/* visited link */
+.gold-white:visited {
+    color: #c28b00;
+}
+
+/* mouse over link */
+.gold-white:hover {
+    color: lightgrey;
+}
+
+/* selected link */
+.gold-white:active {
+    color: lightgrey;
+}
+
+
+/* unvisited link */
+.black:link {
+    color: black;
+}
+
+/* visited link */
+.black:visited {
+    color: black;
+}
+
+/* mouse over link */
+.black:hover {
+    color: black;
+}
+
+/* selected link */
+.black:active {
+    color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #8d5100;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #c28b00;
+    color: white;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c28b00;
+  border-radius: 7.5%;
+  border: 0px;
+  display: inline-block;
+  text-align: top;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.025);
+}
+
+.newsbox {
+    width: 98%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #c28b00;
+    border: 0px;
+    text-align: top;
+    display: table;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.newsbox:hover {
+  transform: scale(1.025);
+}
+
+.longbox {
+  width: 1230px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c28b00;
+  border: 0px;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.longbox:hover {
+  transform: scale(1.025);
+}
+
+.halfbox {
+    width: 820px;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #c28b00;
+    border: 0px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.halfbox:hover {
+  transform: scale(1.025);
+}
+
+.wikibox {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c28b00;
+  border-radius: 7.5%;
+  border: 0px;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.wikibox:hover {
+  transform: scale(1.025);
+}
+
+.fullscreenbox {
+  width: 97%;
+  height: 97%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c28b00;
+  border: 0px;
+  display: inline-block;
+  text-align: left;
+}
+
+.contentbox {
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  color: #c28b00;
+  border: 0px;
+  display: inline-block;
+  text-align: left;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  float: right;
+}
+
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
