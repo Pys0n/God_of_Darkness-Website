@@ -16,6 +16,32 @@
 	</div>
 	<br>
 	<div class="newsbox">
+		<b>Birthday!</b><br>
+		God of Darkness celebrates its 1st birthday in: <b><i><p id="demo"></p></i></b>
+
+		<script>
+		var countDownDate = new Date("Jul 30, 2024 00:00:00").getTime();
+		var x = setInterval(function() {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+		}, 1000);
+		</script>
+	</div>
+	
+	<div class="newsbox">
 		<b>GitHub!</b><br>
 		You can now find this website at <i>https://github.com/Pys0n/God_of_Darkness-Website</i> on GitHub. The game will also be released there...
 		<p align="right" style="font-size: 12px;"><i>05. June, 06:35; uploaded by Pys0n</i></p>
