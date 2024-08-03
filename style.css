@@ -114,6 +114,22 @@ a:active {
   transform: scale(1.025);
 }
 
+.highbox {
+  width: 400px;
+  height: 1500px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c28b00;
+  border: 0px;
+  display: inline-block;
+  text-align: top;
+  transition: transform 0.3s;
+}
+
+.highbox:hover {
+  transform: scale(1.025);
+}
+
 .newsbox {
     width: 98%;
     padding: 10px;
