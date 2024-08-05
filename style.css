@@ -111,11 +111,11 @@ a:active {
 }
 
 .box:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .highbox {
-  width: 400px;
+  width: 435px;
   height: 1500px;
   padding: 10px;
   margin: 10px;
@@ -127,7 +127,7 @@ a:active {
 }
 
 .highbox:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .newsbox {
@@ -143,7 +143,7 @@ a:active {
 }
 
 .newsbox:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .longbox {
@@ -159,7 +159,7 @@ a:active {
 }
 
 .longbox:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .halfbox {
@@ -175,7 +175,7 @@ a:active {
 }
 
 .halfbox:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .wikibox {
@@ -192,7 +192,7 @@ a:active {
 }
 
 .wikibox:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .fullscreenbox {
