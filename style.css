@@ -234,8 +234,14 @@ td {
   border-collapse: collapse;
 }
 
-.container {
+.container-2items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.container-4items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
