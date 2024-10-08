@@ -147,7 +147,7 @@ a:active {
 }
 
 .longbox {
-  width: 1230px;
+  width: 1400px;
   height: 400px;
   padding: 10px;
   margin: 10px;
@@ -163,7 +163,7 @@ a:active {
 }
 
 .halfbox {
-    width: 820px;
+    width: 900px;
     height: 100%;
     padding: 10px;
     margin: 10px;
@@ -232,4 +232,10 @@ th {
 td {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
