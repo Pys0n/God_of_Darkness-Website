@@ -162,8 +162,8 @@ a:active {
   transform: scale(1.015);
 }
 
-.halfbox {
-    width: 900px;
+.onethirdbox {
+    width: 580px;
     height: 100%;
     padding: 10px;
     margin: 10px;
@@ -174,7 +174,7 @@ a:active {
     transition: transform 0.3s;
 }
 
-.halfbox:hover {
+.onethirdbox:hover {
   transform: scale(1.015);
 }
 

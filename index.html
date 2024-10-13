@@ -48,11 +48,15 @@
 		</div>
 	</div>
 
-	<div class="halfbox" id="boxChangelog">
+	<div class="onethirdbox" id="boxBacklog">
+		<h2>Backlog</h2><br>
+		All features at a glance.
+	</div>
+	<div class="onethirdbox" id="boxChangelog">
 		<h2>Changelog</h2><br>
 		All changes at a glance.
 	</div>
-	<div class="halfbox" id="boxContact">
+	<div class="onethirdbox" id="boxContact">
 		<h2>Contact</h2><br>
 		This is how you can reach me.
 	</div>
@@ -74,6 +78,10 @@
 		
 		document.getElementById('boxWiki').addEventListener('click', function() {
 			window.location.href = 'wiki/overview.html';
+		});
+
+		document.getElementById('boxBacklog').addEventListener('click', function() {
+			window.location.href = 'backlog.html';
 		});
 		
 		document.getElementById('boxChangelog').addEventListener('click', function() {
