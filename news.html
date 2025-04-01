@@ -18,7 +18,41 @@
 	  <a href="changelog.html">Changelog</a>
 	  <a href="contact.html">Contact</a>
 	</div>
+
+	<input type="checkbox" id="birthdayCheck" name="birthdayCheck" value="Birthday" onclick="toggleBirthdayCounter()" style="float: right;">
+	<label for="birthdayCheck" style="color: #c28b00; float: right;"> Show Birthday Counter </label>
+	<script src="showBirthdayCounter.js"></script>
+
 	<br>
+
+	<div class="birthdaybox" id="birthdayCounter">
+		<b>Birthday!</b><br>
+		God of Darkness celebrates its 2nd birthday in: <b><i><p id="demo"></p></i></b>
+
+		<script>
+		var countDownDate = new Date("Jul 30, 2025 00:00:00").getTime();
+		var x = setInterval(function() {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY GoD!";
+		}
+		}, 1000);
+		</script>
+	</div>
+
+	<br>
+
 	<div class="newsbox">
 		<b>Version 0.20.0 will be released later...</b><br>
 		Version 0.20.0 will be released later than planned. I have been very busy recently and was therefore unable to develop the update in time.<br><br> 
@@ -27,66 +61,66 @@
 		The main feature is the creation of a map, or parts of a map. UI updates in the main menu are also possible.<br><br>
 		If possible, I will keep you up to date here in the news. To see which features are still to be implemented or have been implemented you can have a look at<br>
 		the <a href="backlog.html" style="color: #1d1d1d;">backlog</a> and if you want to have a look at older updates and their features you can have a look at the <a href="changelog.html" style="color: #1d1d1d;">changelog</a>... 
-		<p align="right" style="font-size: 12px;"><i>01. April 2025, 17:36; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>01. April 2025, 17:36; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Version 0.20.0 will be released on 01 February 2025!</b><br>
 		The update is coming later than planned. Running and buttons, pressure plates, chests, walls, trees and leaves have already been added. You can also interact<br>
 		with certain objects. However, there are still a lot of bugs with the event handling, there are still no enemies and the ui of the inventory is to be completely<br>
 		reworked. For these reasons, version 0.20.0 will not be released until the beginning of February.
-		<p align="right" style="font-size: 12px;"><i>02. January 2025, 17:00; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>02. January 2025, 17:00; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Version 0.19.0 is finally finished!</b><br>
 		The 0.19.0 is now available! There are over 640 new skills, as well as 18 new graphics for the skills, several smaller features for the skills and a logo for GoD.<br>
 		Since yesterday there is an article about the skilltree with all its skills here on the website in the wiki.<br>
 		The goal for version 0.20.0? To completely renew the game (only the game itself, not the skills, the inventory, etc.), and maybe add a few smaller features...
-		<p align="right" style="font-size: 12px;"><i>01. November 2024, 09:22; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>01. November 2024, 09:22; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>The inventory is not finished.</b><br>
 		There are still a lot of bugs in the inventory. As soon as I have time, I will fix them.
-		<p align="right" style="font-size: 12px;"><i>29. October 2024, 14:44; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>29. October 2024, 14:44; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Version 0.19.0 finished!</b><br>
 		The version 0.19.0 is ready and will be released on 01 November 2024. The game will be completely revised in 0.20.0, which will be released on 01 January at the latest.
-		<p align="right" style="font-size: 12px;"><i>29. October 2024, 14:39; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>29. October 2024, 14:39; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>All skills are finished!</b><br>
 		All 716 skills are finished! Only the new skill graphics are missing.
-		<p align="right" style="font-size: 12px;"><i>29. October 2024, 10:08; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>29. October 2024, 10:08; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Fifth Goal achieved!</b><br>
 		606 of the 716 skills are finished! The new goal is to complete all skills. Only the skills of the necromancer and the archer are missing.
-		<p align="right" style="font-size: 12px;"><i>28. October 2024, 17:56; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>28. October 2024, 17:56; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Fourth Goal achieved!</b><br>
 		496 of the 716 skills are finished! The new goal is to complete 606 skills. Only the skills of the mage, the necromancer, the dwarf and the archer are missing.
-		<p align="right" style="font-size: 12px;"><i>28. October 2024, 16:24; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>28. October 2024, 16:24; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Third Goal achieved!</b><br>
 		441 of the 716 skills are finished! The new goal is to complete 496 skills. In addition, new skills will be added for version 0.19.0.
-		<p align="right" style="font-size: 12px;"><i>28. October 2024, 14:41; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>28. October 2024, 14:41; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Second Goal achieved!</b><br>
 		386 of the 716 skills are finished! The new goal is to complete 441 skills.
-		<p align="right" style="font-size: 12px;"><i>27. October 2024, 11:10; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>27. October 2024, 11:10; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Goal achieved!</b><br>
 		259 of the 716 skills are finished! The new goal is to complete 386 skills. In addition, more graphics for the skills will be added for version 0.19.0.
-		<p align="right" style="font-size: 12px;"><i>edited on 27. October 2024, 11:05; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>edited on 27. October 2024, 11:05; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Version 0.19.0 will be released in November</b><br>
 		Version 0.19.0 will be released one month later. The features of this version will be the skills and a few small bug fixes. The goal is to complete 259 of the 719 skills, including all attack and defence skills.
-		<p align="right" style="font-size: 12px;"><i>edited on 13. October 2024, 17:09; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>edited on 13. October 2024, 17:09; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Version 0.18.0 is now available</b><br>
@@ -95,12 +129,12 @@
 		removed, but companion-like creatures will be added again later with a specific character. There are several new attributes for the characters and the rarities of the items have been greatly improved, now not only the<br>
 		names are colored, because the rarity is now under the name in capital letters and colored, in addition, the name of an item can change when the rarity changes. In the item info, which is also in the inventory, the item<br>
 		names will now always be slightly larger and bold. In addition, the attributes are changed by the rarity. And 0.19.0 will be released in just one month...
-		<p align="right" style="font-size: 12px;"><i>01. September 2024, 10:43; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>01. September 2024, 10:43; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Monthly updates</b><br>
 		From 0.18.0, new versions will be released every month.<br>Bug fixes are not affected by this.
-		<p align="right" style="font-size: 12px;"><i>06. August 2024, 12:47; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>06. August 2024, 12:47; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Milestone 0.18.0</b><br>
@@ -112,39 +146,39 @@
 		- add new attributes<br>
 		- update enchantments<br>
 		- remove as many bugs as possible
-		<p align="right" style="font-size: 12px;"><i>edited on 19. August 2024, 15:23; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>edited on 19. August 2024, 15:23; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Happy Birthday GoD!</b><br>
 		GoD is 1 year old since 30 July 2024!
-		<p align="right" style="font-size: 12px;"><i>01. August 2024, 16:39; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>01. August 2024, 16:39; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Birthday update comes later than planned...</b><br>
 		The birthday-update will unfortunately be released a little later, on Thursday 1 August.<br>
 		But I am still looking for a solution to upload it on 30 July.
-		<p align="right" style="font-size: 12px;"><i>23. Juli 2024, 10:41; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>23. Juli 2024, 10:41; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>GitHub!</b><br>
 		You can now find this website at <i>https://github.com/Pys0n/God_of_Darkness-Website</i> on GitHub. The game will also be released there...
-		<p align="right" style="font-size: 12px;"><i>05. June 2024, 06:35; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>05. June 2024, 06:35; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Website finished!</b><br>
 		The website is finished, from now on you can find an overview of all updates in the changelog. News about the game will of course continue to appear here.<br>
 		The wiki will be started as soon as the items, enemies and enchantments have been added to the game.
-		<p align="right" style="font-size: 12px;"><i>04. June 2024, 16:26; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>04. June 2024, 16:26; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Changelog completed!</b><br>
 		From now on you can see all past updates and bug-fixes in the changelog.
-		<p align="right" style="font-size: 12px;"><i>25. April 2024, 17:24; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>25. April 2024, 17:24; uploaded by Pys0n</i></p>
 	</div>
 	<div class="newsbox">
 		<b>Website added!</b><br>
 		God of Darkness now has its own website!
-		<p align="right" style="font-size: 12px;"><i>22. April 2024, 17:42; uploaded by Pys0n</i></p>
+		<p align=right style="font-size: 12px;"><i>22. April 2024, 17:42; uploaded by Pys0n</i></p>
 	</div>
 	<footer class='black-footer'>
 	  <div id='footer-content'>
